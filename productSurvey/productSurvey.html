@@ -3,4 +3,37 @@
     <head>
         <title>Luxury Brand Feedback</title>
     </head>
-    
+    <body>
+        <h1>Luxury Brand Feedback</h1>
+        <h2>Please provide your feedback on our luxury brand products.</h2>
+        <label for="name">Name:</label><br><br>
+        <input type="text" id="name" placeholder="Your name" required ><br><br>
+        <label for = "age">Age:</label><br><br>
+        <input type="number" id="age" placeholder="Your age" required ><br><br>
+        <label for="job">Occupation:</label><br><br>
+        <input type="text" id="job" placeholder="Your occupation" required ><br><br>
+        <label for="designation">Designation:</label><br><br>
+        <input type="text" id="designation" placeholder="Your designation" required ><br><br>
+        <label for="productType">Product Type: </label><br><br>
+        <select id="productType" required>
+            <option value="">Select a product type</option>
+            <option value="balms">Balms</option>
+            <option value="perfume">Perfume</option>
+            <option value="cream">Cream</option>
+            <option value="oils">Oils</option>
+        </select><br><br>
+        <label for="feedbackText">Feedback:</label><br><br>
+        <textarea id="feedbackText" rows="5" cols="30" placeholder="Enter Feedback Here: " required></textarea><br><br>
+        <button type="submit" id="submitBtn">Submit Feedback</button>
+        <hr>
+        <div id="userInfo" style="display: none;">
+            <h2>User Information: </h2>
+            <p>Name: <span id="userName"></span></p>
+            <p>Age: <span id="userAge"></span></p>
+            <p>Occupation: <span id="userJob"></span></p>
+            <p>Designation: <span id="userDesignation"></span></p>
+            <p>Feedback for: <span id="userProductChoice"></span>: <span id="userFeedback"></span></p>
+        </div>
+        <script src="productSurvey.js"></script>
+    </body>
+</html>
